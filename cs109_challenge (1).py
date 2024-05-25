@@ -218,8 +218,7 @@ def create_bayesian_model():
 
 # utilizing gmplot, create 2 Google Maps visuals to navigate school crash data
 def create_maps_visual(involvement):
-  GOOGLE_MAPS_API = "AIzaSyDXuQV55LuSJ1mzjRbNYa3dNrZYoCXhaos"
-  gmap2 = gmplot.GoogleMapPlotter.from_geocode("San Jose, California", apikey="AIzaSyDXuQV55LuSJ1mzjRbNYa3dNrZYoCXhaos")
+  gmap2 = gmplot.GoogleMapPlotter.from_geocode("San Jose, California", apikey="<YOUR KEY HERE>")
 
   if involvement == "Bike" or involvement == "Pedestrian":
     for school in school_bike_dict:
